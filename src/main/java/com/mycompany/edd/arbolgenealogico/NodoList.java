@@ -1,19 +1,19 @@
 package com.mycompany.edd.arbolgenealogico;
 
-public class Nodo<T> {
+public class NodoList<T> {
 
 
     private T data;
-    private Nodo pNext;
+    private NodoList pNext;
 
-    public Nodo(T data){
+    public NodoList(T data){
 
         this.data = data;
         this.pNext = null;
 
     }
     // Sobrecarga de metodos: Dos metodos con el mismo nombre pueden ser distintos si tienen argumentos diferentes
-    public Nodo(T data, Nodo<T> pNext){
+    public NodoList(T data, NodoList<T> pNext){
         this.data = data;
         this.pNext = pNext;
 
@@ -28,11 +28,11 @@ public class Nodo<T> {
         this.data = data;
     }
 
-    public Nodo getpNext() {
+    public NodoList getpNext() {
         return pNext;
     }
 
-    public void setpNext(Nodo<T> pNext) {
+    public void setpNext(NodoList<T> pNext) {
         this.pNext = pNext;
     }
 
